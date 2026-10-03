@@ -11,13 +11,7 @@ public class Calculadora {
         String titulo = "=== Calculadora de consola ===";
  
         while (true) {
-            System.out.println("\n" + titulo);
-            System.out.println("1. Sumar");
-            System.out.println("2. Restar");
-            System.out.println("3. Multiplicar");
-            System.out.println("4. Dividir");
-            System.out.println("5. Ver historial");
-            System.out.println("0. Salir");
+           
  
             int opcion = leerOpcion(entrada);
             if (opcion == 0) {
@@ -74,6 +68,16 @@ public class Calculadora {
     }
  
     private static int leerOpcion(Scanner entrada) {
+    	
+    	 String titulo = null;
+		 System.out.println("\n" + titulo);
+         System.out.println("1. Sumar");
+         System.out.println("2. Restar");
+         System.out.println("3. Multiplicar");
+         System.out.println("4. Dividir");
+         System.out.println("5. Ver historial");
+         System.out.println("0. Salir");
+    	
         System.out.print("Elige una opción: ");
         try {
             return Integer.parseInt(entrada.nextLine().trim());
